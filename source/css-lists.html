@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách trong CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        .example {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .disc {
+            list-style-type: disc;
+        }
+
+        .circle {
+            list-style-type: circle;
+        }
+
+        .square {
+            list-style-type: square;
+        }
+
+        .decimal {
+            list-style-type: decimal;
+        }
+
+        .upper-alpha {
+            list-style-type: upper-alpha;
+        }
+
+        .lower-alpha {
+            list-style-type: lower-alpha;
+        }
+
+        .upper-roman {
+            list-style-type: upper-roman;
+        }
+
+        .lower-roman {
+            list-style-type: lower-roman;
+        }
+
+        .inside {
+            list-style-position: inside;
+        }
+
+        .outside {
+            list-style-position: outside;
+        }
+
+        .shorthand {
+            list-style: square inside;
+        }
+
+        .color-list {
+            color: #0066cc;
+        }
+
+        .color-list li {
+            color: #333;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Danh sách trong CSS</h1>
+
+    <div class="example">
+        <h2>1. list-style-type - Danh sách không có thứ tự</h2>
+
+        <h3>Disc</h3>
+        <ul class="disc">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Circle</h3>
+        <ul class="circle">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Square</h3>
+        <ul class="square">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <div class="example">
+        <h2>2. list-style-type - Danh sách có thứ tự</h2>
+
+        <h3>Decimal</h3>
+        <ol class="decimal">
+            <li>Học HTML</li>
+            <li>Học CSS</li>
+            <li>Học JavaScript</li>
+        </ol>
+
+        <h3>Upper Alpha</h3>
+        <ol class="upper-alpha">
+            <li>Thứ nhất</li>
+            <li>Thứ hai</li>
+            <li>Thứ ba</li>
+        </ol>
+
+        <h3>Lower Alpha</h3>
+        <ol class="lower-alpha">
+            <li>Thứ nhất</li>
+            <li>Thứ hai</li>
+            <li>Thứ ba</li>
+        </ol>
+
+        <h3>Upper Roman</h3>
+        <ol class="upper-roman">
+            <li>Phần một</li>
+            <li>Phần hai</li>
+            <li>Phần ba</li>
+        </ol>
+
+        <h3>Lower Roman</h3>
+        <ol class="lower-roman">
+            <li>Phần một</li>
+            <li>Phần hai</li>
+            <li>Phần ba</li>
+        </ol>
+    </div>
+
+    <div class="example">
+        <h2>3. list-style-image - Đánh dấu bằng hình ảnh</h2>
+
+        <ul style="list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif');">
+            <li>Sản phẩm</li>
+            <li>Dịch vụ</li>
+            <li>Liên hệ</li>
+        </ul>
+    </div>
+
+    <div class="example">
+        <h2>4. list-style-position - Vị trí đánh dấu</h2>
+
+        <h3>Inside</h3>
+        <ul class="inside">
+            <li>Đánh dấu nằm bên trong dòng nội dung.</li>
+            <li>Đây là ví dụ list-style-position: inside.</li>
+        </ul>
+
+        <h3>Outside</h3>
+        <ul class="outside">
+            <li>Đánh dấu nằm bên ngoài dòng nội dung.</li>
+            <li>Đây là ví dụ list-style-position: outside.</li>
+        </ul>
+    </div>
+
+    <div class="example">
+        <h2>5. list-style - Thuộc tính rút gọn</h2>
+
+        <ul class="shorthand">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <p>
+            Thuộc tính list-style là thuộc tính rút gọn,
+            kết hợp kiểu đánh dấu và vị trí đánh dấu.
+        </p>
+    </div>
+
+    <div class="example">
+        <h2>6. Định kiểu danh sách với màu sắc</h2>
+
+        <ul class="color-list">
+            <li>Danh sách HTML</li>
+            <li>Danh sách CSS</li>
+            <li>Danh sách JavaScript</li>
+        </ul>
+    </div>
+
+</body>
+</html>
