@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Phần đầu trang */
+#head {
+    height: 100px;
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Thanh liên kết đầu trang */
+#head-link {
+    height: 40px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#head-link a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+#head-link a:hover {
+    text-decoration: underline;
+}
+
+/* Cột bên trái */
+#left {
+    width: 200px;
+    min-height: 400px;
+    background-color: #eeeeee;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#left ul {
+    padding-left: 20px;
+}
+
+#left a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* Nội dung chính */
+#content {
+    width: 580px;
+    min-height: 400px;
+    background-color: #ffffff;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Cột bên phải */
+#right {
+    width: 220px;
+    min-height: 400px;
+    background-color: #eeeeee;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+#footer {
+    clear: both;
+    height: 60px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+#footer p {
+    margin: 5px 0;
+}
