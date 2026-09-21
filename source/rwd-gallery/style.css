@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery-item {
+    width: 25%;
+    padding: 6px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+}
+
+.description {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Màn hình nhỏ hơn 700px:
+   2 ảnh trên một dòng */
+@media (max-width: 700px) {
+    .gallery-item {
+        width: 50%;
+    }
+}
+
+/* Màn hình nhỏ hơn 500px:
+   1 ảnh trên một dòng */
+@media (max-width: 500px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
