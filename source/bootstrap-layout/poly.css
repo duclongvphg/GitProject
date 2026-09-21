@@ -1,0 +1,87 @@
+header {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    background-color: #337ab7;
+}
+
+.shopping-mall {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    font-variant: small-caps;
+    z-index: 2;
+}
+
+.shopping-mall > h1 {
+    font-family: Impact, sans-serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 0;
+    border-bottom: 1px dotted gray;
+    margin: 0;
+}
+
+.shopping-mall > h5 {
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+header > img {
+    height: 150px;
+    max-width: 55%;
+    object-fit: cover;
+}
+
+.poly-cart {
+    margin-top: 5px;
+}
+
+.poly-cart ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-variant: small-caps;
+}
+
+.poly-cart .panel-heading strong {
+    font-variant: small-caps;
+    font-size: larger;
+    text-shadow: 0 0 2px darkgray;
+}
+
+.poly-prod {
+    text-align: center;
+    padding: 5px;
+}
+
+.poly-prod .panel-body img {
+    height: 150px;
+    max-width: 95%;
+    object-fit: contain;
+}
+
+
+/* Responsive */
+@media (max-width: 767px) {
+
+    .shopping-mall > h1 {
+        font-size: 32px;
+    }
+
+    .shopping-mall > h5 {
+        font-size: 12px;
+    }
+
+    header > img {
+        max-width: 45%;
+    }
+
+    .poly-prod {
+        width: 100%;
+    }
+
+}
