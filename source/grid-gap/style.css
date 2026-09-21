@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+}
+
+.grid div {
+    background-color: lightblue;
+    border: 1px solid #333;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Ví dụ 1:
+   20px khoảng cách giữa các hàng
+   10px khoảng cách giữa các cột */
+.example-1 {
+    grid-gap: 20px 10px;
+}
+
+/* Ví dụ 2:
+   20px khoảng cách giữa cả hàng và cột */
+.example-2 {
+    grid-gap: 20px;
+}
