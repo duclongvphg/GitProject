@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f9fa;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.explanation {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.explanation ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.demo-container {
+    display: flex;
+    width: 500px;
+    min-height: 180px;
+    border: 2px solid #333;
+    padding: 10px;
+    gap: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.demo-item {
+    flex: 0 0 120px;
+    height: 60px;
+    border: 1px solid #333;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* Các ví dụ flex-flow */
+.example-1 {
+    flex-flow: row nowrap;
+}
+
+.example-2 {
+    flex-flow: row-reverse nowrap;
+}
+
+.example-3 {
+    flex-flow: row wrap;
+}
+
+.example-4 {
+    flex-flow: row-reverse wrap;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .demo-container {
+        width: 100%;
+    }
+}
