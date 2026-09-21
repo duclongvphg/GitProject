@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Tạo form đơn giản</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .hobby {
+            margin: 8px 0;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 16px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<form method="get" action="simple-form.html">
+
+    <h2>Thông tin cá nhân</h2>
+
+    <label for="yourname">Họ và tên:</label>
+    <input type="text" id="yourname" name="yourname">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label>Sở thích:</label>
+
+    <div class="hobby">
+        <input type="checkbox" id="sport" name="hobby" value="sport">
+        <label for="sport" style="display:inline;">Thể thao</label>
+    </div>
+
+    <div class="hobby">
+        <input type="checkbox" id="music" name="hobby" value="music">
+        <label for="music" style="display:inline;">Âm nhạc</label>
+    </div>
+
+    <div class="hobby">
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading" style="display:inline;">Đọc sách</label>
+    </div>
+
+    <div class="hobby">
+        <input type="checkbox" id="travel" name="hobby" value="travel">
+        <label for="travel" style="display:inline;">Du lịch</label>
+    </div>
+
+    <div class="buttons">
+        <input type="submit" value="Gửi thông tin">
+        <input type="reset" value="Nhập lại">
+    </div>
+
+</form>
+
+</body>
+</html>
