@@ -1,0 +1,69 @@
+/* 1. Element Selector */
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* 4. Grouping Selector */
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+/* 2. ID Selector */
+#main-title {
+    color: #333;
+    text-align: center;
+}
+
+/* 3. Class Selector */
+.description {
+    color: #555;
+    font-size: 18px;
+}
+
+.hobbies {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+/* Màu sắc khác nhau cho 3 sở thích */
+.hobbies li:nth-child(1) {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.hobbies li:nth-child(2) {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.hobbies li:nth-child(3) {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+/* Style cho button */
+#my-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* 5. Pseudo-class Selector */
+#my-button:hover {
+    background-color: #217dbb;
+    color: yellow;
+}
