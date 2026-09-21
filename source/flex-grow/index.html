@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex-grow Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS flex-grow Property</h1>
+
+    <h2>Ví dụ: flex-grow trên item thứ 2</h2>
+    <p>Item thứ 2 (màu đỏ) được thiết lập flex-grow: 2, vì vậy nó sẽ nhận nhiều không gian trống hơn các item khác (flex-grow: 0).</p>
+    <div class="grow-container">
+        <div class="grow-item bg-blue">Item 1</div>
+        <div class="grow-item grow-2 bg-red">Item 2</div>
+        <div class="grow-item bg-blue">Item 3</div>
+        <div class="grow-item bg-blue">Item 4</div>
+        <div class="grow-item bg-blue">Item 5</div>
+    </div>
+
+    <h2>Demo: Các giá trị của flex-grow</h2>
+
+    <h3>1. flex-grow: 0 (Mặc định)</h3>
+    <p>Item không phát triển để chiếm phần không gian trống.</p>
+    <div class="grow-container">
+        <div class="grow-item grow-0 bg-green">Item (grow: 0)</div>
+        <div class="grow-item bg-gray">Item B</div>
+    </div>
+
+    <h3>2. flex-grow: 1</h3>
+    <p>Item phát triển và chia đều không gian trống theo tỷ lệ 1.</p>
+    <div class="grow-container">
+        <div class="grow-item grow-1 bg-green">Item (grow: 1)</div>
+        <div class="grow-item bg-gray">Item B</div>
+    </div>
+
+    <h3>3. flex-grow: 2</h3>
+    <p>Item phát triển theo tỷ lệ 2 so với các item có grow: 1 (nếu có).</p>
+    <div class="grow-container">
+        <div class="grow-item grow-2 bg-green">Item (grow: 2)</div>
+        <div class="grow-item grow-1 bg-gray">Item (grow: 1)</div>
+    </div>
+
+    <h3>4. flex-grow: initial</h3>
+    <p>Quay về giá trị mặc định của thuộc tính (giống grow: 0).</p>
+    <div class="grow-container">
+        <div class="grow-item grow-initial bg-green">Item (grow: initial)</div>
+        <div class="grow-item bg-gray">Item B</div>
+    </div>
+
+    <h3>5. flex-grow: inherit</h3>
+    <p>Kế thừa giá trị flex-grow từ phần tử cha (Cha được gán flex-grow: 4, nên item cũng sẽ có giá trị là 4).</p>
+    <div class="grow-container parent-grow">
+        <div class="grow-item grow-inherit bg-green">Item (grow: inherit)</div>
+        <div class="grow-item grow-1 bg-gray">Item (grow: 1)</div>
+    </div>
+
+</body>
+</html>

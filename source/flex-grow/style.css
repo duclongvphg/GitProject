@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.grow-container {
+    display: flex;
+    width: 100%;
+    border: 2px solid #333;
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.grow-item {
+    flex-grow: 0;
+    flex-basis: 100px;
+    min-width: 0;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* Các lớp màu nền */
+.bg-blue { background-color: #add8e6; }
+.bg-red { background-color: #ffcccb; }
+.bg-green { background-color: #90ee90; }
+.bg-gray { background-color: #e0e0e0; }
+
+/* Các lớp flex-grow */
+.grow-0 {
+    flex-grow: 0;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grow-initial {
+    flex-grow: initial;
+}
+
+/* Phần tử cha chứa giá trị để con inherit */
+.parent-grow {
+    flex-grow: 4;
+}
+
+.grow-inherit {
+    flex-grow: inherit;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 600px) {
+    .grow-container {
+        flex-wrap: wrap; /* Cho phép rớt dòng nếu thiếu không gian, giúp nội dung không tràn hoặc ra ngoài */
+    }
+}
