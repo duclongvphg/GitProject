@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Thiết lập Grid Layout chính */
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main sidebar"
+        "footer footer";
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Định nghĩa Grid Area cho các phần tử */
+.header {
+    grid-area: header;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.navigation {
+    grid-area: nav;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    grid-area: main;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #e9ecef;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Styling cho menu điều hướng */
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navigation a:hover {
+    color: #1a5276;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "footer";
+    }
+
+    /* Đổi hướng menu điều hướng thành cột dọc trên mobile */
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
