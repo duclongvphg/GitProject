@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex-basis Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS flex-basis Property</h1>
+
+    <h2>Ví dụ 1: flex-basis: 150px (number)</h2>
+    <p>Các item có kích thước ban đầu là 150px trước khi chia sẻ không gian dư thừa.</p>
+    <div class="flex-container basis-number">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <h2>Ví dụ 2: flex-basis: auto</h2>
+    <p>Kích thước ban đầu phụ thuộc vào nội dung hoặc width của item.</p>
+    <div class="flex-container basis-auto">
+        <div class="flex-item">Item Ngắn</div>
+        <div class="flex-item">Item Có Nội Dung Dài Hơn</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <h2>Ví dụ 3: flex-basis: initial</h2>
+    <p>Sử dụng giá trị mặc định của thuộc tính (giống như auto trong trường hợp này).</p>
+    <div class="flex-container basis-initial">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <h2>Ví dụ 4: flex-basis: inherit</h2>
+    <p>Các item kế thừa giá trị flex-basis từ phần tử cha (cha được set flex-basis: 180px).</p>
+    <div class="flex-container basis-parent basis-inherit">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+</body>
+</html>
