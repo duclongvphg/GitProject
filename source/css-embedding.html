@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng CSS vào HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .internal-text {
+            color: blue;
+        }
+    </style>
+
+    <link rel="stylesheet" href="external-style.css">
+</head>
+
+<body>
+
+    <h1>Nhúng CSS vào trang HTML</h1>
+
+    <section>
+        <h2>Phần 1: Inline Style</h2>
+        <p style="color: red;">
+            Đây là văn bản sử dụng Inline Style.
+        </p>
+    </section>
+
+    <section>
+        <h2>Phần 2: Internal Style</h2>
+        <p class="internal-text">
+            Đây là văn bản sử dụng Internal Style.
+        </p>
+    </section>
+
+    <section>
+        <h2>Phần 3: External Style</h2>
+        <p class="external-text">
+            Đây là văn bản sử dụng External Style.
+        </p>
+    </section>
+
+</body>
+</html>
