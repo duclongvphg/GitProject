@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Class chung cho flex container */
+.flex-container {
+    display: flex;
+    width: 500px;
+    border: 2px solid #333;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Các item có kích thước cố định */
+.flex-item {
+    width: 140px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* Các ví dụ flex-wrap */
+.nowrap-example {
+    flex-wrap: nowrap;
+}
+
+.wrap-example {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse-example {
+    flex-wrap: wrap-reverse;
+}
+
+.initial-example {
+    flex-wrap: initial;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 600px) {
+    .flex-container {
+        width: 100%;
+    }
+}
