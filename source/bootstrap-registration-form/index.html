@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Người Dùng</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    >
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8 col-lg-6">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <h1 class="text-center mb-2">
+                            Đăng Ký Người Dùng
+                        </h1>
+
+                        <p class="text-muted text-center mb-4">
+                            Vui lòng điền đầy đủ thông tin để đăng ký tài khoản.
+                        </p>
+
+                        <form>
+
+                            <!-- HỌ VÀ TÊN -->
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">
+                                    Họ và tên
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Nhập họ và tên"
+                                    required
+                                >
+                            </div>
+
+                            <!-- EMAIL -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@email.com"
+                                    required
+                                >
+                            </div>
+
+                            <!-- MẬT KHẨU -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">
+                                    Mật khẩu
+                                </label>
+
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Nhập mật khẩu"
+                                    required
+                                >
+                            </div>
+
+                            <!-- XÁC NHẬN MẬT KHẨU -->
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">
+                                    Xác nhận mật khẩu
+                                </label>
+
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    placeholder="Nhập lại mật khẩu"
+                                    required
+                                >
+                            </div>
+
+                            <!-- GIỚI TÍNH -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Giới tính
+                                </label>
+
+                                <div>
+                                    <div class="form-check form-check-inline">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="gender"
+                                            id="male"
+                                            value="male"
+                                        >
+
+                                        <label
+                                            class="form-check-label"
+                                            for="male"
+                                        >
+                                            Nam
+                                        </label>
+
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="gender"
+                                            id="female"
+                                            value="female"
+                                        >
+
+                                        <label
+                                            class="form-check-label"
+                                            for="female"
+                                        >
+                                            Nữ
+                                        </label>
+
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="gender"
+                                            id="other"
+                                            value="other"
+                                        >
+
+                                        <label
+                                            class="form-check-label"
+                                            for="other"
+                                        >
+                                            Khác
+                                        </label>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- SỞ THÍCH -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Sở thích
+                                </label>
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        name="hobby"
+                                        id="coding"
+                                        value="coding"
+                                    >
+
+                                    <label
+                                        class="form-check-label"
+                                        for="coding"
+                                    >
+                                        Lập trình
+                                    </label>
+
+                                </div>
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        name="hobby"
+                                        id="music"
+                                        value="music"
+                                    >
+
+                                    <label
+                                        class="form-check-label"
+                                        for="music"
+                                    >
+                                        Âm nhạc
+                                    </label>
+
+                                </div>
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        name="hobby"
+                                        id="travel"
+                                        value="travel"
+                                    >
+
+                                    <label
+                                        class="form-check-label"
+                                        for="travel"
+                                    >
+                                        Du lịch
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <!-- QUỐC GIA -->
+                            <div class="mb-4">
+
+                                <label
+                                    for="country"
+                                    class="form-label"
+                                >
+                                    Quốc gia
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="country"
+                                    name="country"
+                                    required
+                                >
+                                    <option value="">
+                                        -- Chọn quốc gia --
+                                    </option>
+
+                                    <option value="vietnam">
+                                        Việt Nam
+                                    </option>
+
+                                    <option value="japan">
+                                        Nhật Bản
+                                    </option>
+
+                                    <option value="korea">
+                                        Hàn Quốc
+                                    </option>
+
+                                    <option value="usa">
+                                        Hoa Kỳ
+                                    </option>
+
+                                    <option value="uk">
+                                        Vương quốc Anh
+                                    </option>
+                                </select>
+
+                            </div>
+
+                            <!-- SUBMIT -->
+                            <div class="d-grid">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >
+                                    Đăng Ký
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
