@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Box Model 2 - Thực hành</title>
+
+    <style>
+        /* CSS reset được yêu cầu giữ nguyên */
+        html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+
+        h1 {
+            color: #000000;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #000000;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #444444;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #440000;
+            text-decoration: none;
+        }
+
+        /* ----- HOÀN THIỆN CSS ----- */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            /* Thêm padding/margin để nội dung không bị dính sát lề do thẻ reset ở trên */
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        ul {
+            list-style-type: square;
+            /* Thêm margin-left để hiển thị dấu chấm (vì đã bị reset margin/padding bằng 0 ở trên) */
+            margin: 20px 0 20px 40px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        li {
+            /* Khoảng cách giữa các mục trong danh sách */
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            background-color: #fafafa;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Thực hành Box Model 2</h1>
+    <p>Dưới đây là một danh sách minh họa cách sử dụng các thuộc tính Margin và Padding trong Box Model sau khi đã sử dụng CSS Reset.</p>
+
+    <h2>Danh sách các chủ đề</h2>
+    <ul>
+        <li><a href="#">Khái niệm cơ bản về Box Model</a></li>
+        <li><a href="#">Thuộc tính Padding</a></li>
+        <li><a href="#">Thuộc tính Border</a></li>
+        <li><a href="#">Thuộc tính Margin</a></li>
+    </ul>
+
+    <h3>Lưu ý</h3>
+    <p>Do ban đầu toàn bộ margin và padding của `ul`, `li` đã bị đưa về 0, chúng ta cần phải thiết lập lại chúng để danh sách hiển thị đúng chuẩn và dễ đọc.</p>
+
+</body>
+</html>
